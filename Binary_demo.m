@@ -14,9 +14,9 @@ c_W = 0.1;
 
 
 %% start level set evolution
-tic
 u =  binary_test(Img,c_u,r,l,lmada,c_W,alpha);
-toc
+
+
 %% figure
 figure;imshow(u,[]);title('final u');colorbar
 figure;imshow(u>0,[]);title('binary result');colorbar
